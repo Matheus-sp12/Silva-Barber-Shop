@@ -1,0 +1,62 @@
+.galeria {
+    margin: 50px auto;
+    width: 80%;
+}
+
+.galeria h5 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 25px;
+    color: aliceblue;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.galeria ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+}
+
+.galeria li {
+  width: 100%;
+}
+
+.galeria li:hover {
+    opacity: 0.5;
+  }
+  
+
+
+.galeria img {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .galeria {
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    
+    .galeria ul {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .galeria li {
+      width: 100%;
+    }
+    
+    .galeria li:hover {
+        opacity: 0.5;
+      }
+      
+    
+    
+    .galeria img {
+        width: 100%;
+    }
+}

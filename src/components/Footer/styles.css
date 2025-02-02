@@ -1,0 +1,105 @@
+.footer {
+    width: 80%;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    font-size: 20px;
+    list-style: none;
+}
+
+.back {
+    background-color: black;
+    padding: 20px 0;
+}
+
+.img {
+    width: 120px;
+    height: 120px;
+}
+
+.menu{
+    list-style: none;
+}
+
+.contact-footer h5 {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu li, .menu a:hover {
+    color: rgb(183, 188, 193);
+}
+
+.menu a {
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+.contact-footer ul {
+    list-style: none;
+}
+
+.contact-footer li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.contact-footer li:hover {
+    color: rgb(183, 188, 193);
+}
+
+.dev{
+    color: aliceblue;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+    .footer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+    }
+    
+    .menu{
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        padding: 0;
+    }
+    
+    
+    .footer h5 {
+        font-family: "Oswald", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        padding: 0;
+    }
+    
+    .menu li {
+        margin: 10px 0;
+    }
+    
+    .menu li, .menu a:hover {
+        color: rgb(183, 188, 193);
+    }
+    
+    .menu a {
+        color: aliceblue;
+        text-decoration: none;
+    
+    }   
+    
+}

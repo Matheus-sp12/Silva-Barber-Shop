@@ -1,0 +1,89 @@
+.servico {
+    margin: 40px auto 0 auto;
+    width: 60%;
+    
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+    color: aliceblue;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.servico ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.servico li {
+    width: 320px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 10 10px 10;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+span {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+p {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.servico img {
+    max-width: 100%;
+    transition: 1s;
+}
+
+.servico img:hover {
+    transform: scale(1.1);
+}
+
+h5 {
+    font-size: 18px;
+    margin: 0;
+    padding-left: 10px;
+}
+
+button {
+    text-align: center;
+    padding: 10px ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border: none;
+    background-color: rgb(229, 239, 35);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+    button:hover {
+        background-color: rgb(234, 241, 88);
+    }
+
+    @media (max-width: 600px) {
+        .servico {
+            width: 90%;
+        }
+                   
+        .servico ul {
+            grid-template-columns: 1fr;
+        }
+    }
+
