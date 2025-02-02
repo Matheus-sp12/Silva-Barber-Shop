@@ -2,7 +2,7 @@
 
 <a href="https://silva-barber-shop-5avw.vercel.app/">Confira nosso site</a>
 
-  <img src="./src/assets/README.png" alt="foto do estabelecimento">
+  <img src="./src/assets/README.png" target="_blank" alt="foto do estabelecimento">
 
 O site Silva Barber Shop é uma plataforma online que oferece serviços de agendamento para uma barbearia. Através dele, os clientes podem visualizar os serviços disponíveis, como cortes de cabelo e aparo de barba, e realizar reservas de forma prática e eficiente.
 
