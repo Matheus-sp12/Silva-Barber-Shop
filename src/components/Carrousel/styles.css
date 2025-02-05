@@ -6,11 +6,18 @@
   
   .carousel-slide img {
     width: 100%;
-    height: 80vh; /* A imagem preenche 100% da altura */
-    object-fit: cover; /* Garante que a imagem preencha sem distorção */
+    height: 90vh; /* A imagem preenche 100% da altura */
+    object-fit: fill; /* Garante que a imagem preencha sem distorção */
+
   }
+  
 
-
+  @media (max-width: 600px) {
+    .carousel-slide img {
+      height: 80vh; 
+      object-fit: cover; 
+    }
+  }
 
     
   
