@@ -7,6 +7,14 @@ import limpeza from "../../assets/serviços/limpeza.jpg"
 import sombrancelha from "../../assets/serviços/sombrancelha.jpg"
 
 function Servico() {
+
+    const handleWhatsAppClick = (item) => {
+        const telefone = "5511986427140"; 
+        const mensagem = `Olá, gostaria de agendar um horário para: ${item}`;
+        const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+      
+        window.open(url, "_blank"); // Abre o link em uma nova aba
+      };
     
     return (
         <div id="services" className="servico">
@@ -22,7 +30,7 @@ function Servico() {
                         <p>R$45,00</p>
                         </div>
                         </span>
-                        <button>Adicionar serviços</button>
+                        <button onClick={() => handleWhatsAppClick("Fazer a barba - R$45")}>Agendar</button>
 
                     </li>
 
@@ -34,7 +42,7 @@ function Servico() {
                         <p>R$50,00</p>
                         </div>
                         </span>
-                        <button>Adicionar serviços</button>
+                        <button onClick={() => handleWhatsAppClick("Corte Masculino - R$50")}>Agendar</button>
                     </li>
 
                     <li>
@@ -45,7 +53,7 @@ function Servico() {
                         <p>R$75,00</p>
                         </div>
                         </span>
-                        <button>Adicionar serviços</button>
+                        <button onClick={() => handleWhatsAppClick("Corte e Barba - R$75")}>Agendar</button>
                     </li>
 
                     <li>
@@ -56,7 +64,7 @@ function Servico() {
                         <p>R$30,00</p>
                         </div>
                         </span>
-                        <button>Adicionar serviços</button>
+                        <button onClick={() => handleWhatsAppClick("Hidratação - R$30")}>Agendar</button>
                     </li>
 
                     <li>
@@ -67,7 +75,7 @@ function Servico() {
                         <p>R$40,00</p>
                         </div>
                         </span>
-                        <button>Adicionar serviços</button>
+                        <button onClick={() => handleWhatsAppClick("Limpeza de pele - R$40")}>Agendar</button>
                     </li>
 
                     <li>
@@ -78,7 +86,7 @@ function Servico() {
                         <p>R$45,00</p>
                         </div>
                         </span>
-                        <button>Adicionar serviços</button>
+                        <button onClick={() => handleWhatsAppClick("Limpeza de sombrancelha - R$45")}>Agendar</button>
                     </li>
                 </ul>
             </div>

@@ -1,42 +1,87 @@
 /* Container do carrossel */
 .carousel-container {
-    width: 100%;
-    padding: 16px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  max-width: 1200px; /* Limita a largura em telas grandes */
+  margin: 0 auto; /* Centraliza */
+}
+
+/* Título do carrossel */
+.carousel-container h3 {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Estilo dos cards */
+.card {
+  text-align: center;
+  padding: 16px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  max-width: 200px;
+  margin: auto; /* Centraliza os cards */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagens dentro dos cards */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Título dentro dos cards */
+.card h3 {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .carousel-container {
+      padding: 0;
+      text-align: center;
   }
 
   .carousel-container h3 {
-    font-family: "Oswald", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+      font-size: 20px;
+
   }
-  
-  /* Estilo dos cards */
+
   .card {
     text-align: center;
-    padding: 16px auto;
+    padding: 16px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     transition: transform 0.3s ease;
+    max-width: 300px;
+    margin: 0 auto; /* Centraliza os cards */
   }
 
-
-  
-  .card:hover {
-    transform: scale(1.01);
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
   .card h3 {
-    margin: 0;
-    padding-bottom: 20px;
-    font-size: 1.5rem;
-    color: #333;
+      font-size: 1.2rem;
   }
-  
+}
+
+/* Ajustes para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .carousel-container {
+      padding: 12px;
+  }
+
+  .card {
+      max-width: 280px;
+  }
+}

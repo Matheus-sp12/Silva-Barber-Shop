@@ -33,6 +33,29 @@ p {
 
 }
 
+@media (min-width: 768px) {
+    .sobre {
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        margin: 15px auto;
+    }
+    
+    
+    .sobre-container {
+        width: 80%;
+    }
+    
+    p {
+        width: 100%;
+    }
+    
+    .sobre-container img {
+        width: 100%;
+    }
+    
+}
+
 @media (max-width: 600px) {
     .sobre {
         margin: 0;

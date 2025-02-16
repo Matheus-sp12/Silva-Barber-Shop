@@ -4,8 +4,8 @@ import "slick-carousel/slick/slick.css"; // Estilos principais do carousel
 import "slick-carousel/slick/slick-theme.css"; // Tema do carousel
 import "./styles.css"; // Estilos personalizados (opcional)
 import image1 from "../../assets/carrousel/banner1.jpg"
-import image2 from "../../assets/carrousel/img2.webp"
-import image3 from "../../assets/carrousel/img3.jpg"
+import image2 from "../../assets/carrousel/teste1.png"
+import image3 from "../../assets/carrousel/teste3.png"
 
 
 

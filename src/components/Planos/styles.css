@@ -2,78 +2,80 @@
     margin: 0 auto;
     padding: 50px 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(51, 51, 51, 1) 28%);
-
+    text-align: center;
 }
 
+/* Título dos planos */
 .planos h5 {
     font-family: "Oswald", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    font-size: 22px;
 }
 
+/* Lista de planos */
 .planos ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr; /* Começa com 1 coluna no mobile */
+    gap: 20px;
     align-items: center;
-    width: 80%;
-    text-align: center;
+    width: 90%;
     margin: 0 auto;
     list-style: none;
+    padding: 0;
 }
 
+/* Ajuste para tablets (2 colunas) */
+@media (min-width: 768px) {
+    .planos ul {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Ajuste para desktops (3 colunas) */
+@media (min-width: 1024px) {
+    .planos ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Cartões de planos */
 .planos li {
-    width: 320px;
+    width: 100%;
+    max-width: 320px; /* Máximo de 320px para não esticar */
     border: none;
     border-radius: 5px;
     background-color: white;
     padding: 20px;
     margin: 0 auto;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .planos li:hover {
-    transform: scale(1.1)
+    transform: scale(1.05);
 }
 
-.planos h5 {
-    font-size: 22px;
-}
-
+/* Descrição dos planos */
 .planos p {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px; /* Ajustado para melhor leitura */
     text-align: left;
 }
 
-@media (max-width: 600px) {
-    .planos ul {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        width: 85%;
-        padding: 0;
-        text-align: center;
-        margin: 0 auto;
-        list-style: none;
-    }
-
-    .planos li {
-        width: 250px;
-        padding: 20px;
-        margin: 20px auto;
-    }
-
-    .planos li:hover {
-        transform: scale(1.1)
-    }
-
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
     .planos h5 {
         font-size: 20px;
     }
 
     .planos p {
-        width: 100%;
-        font-size: 16px;
-        text-align: left;
+        font-size: 14px;
     }
+}
+
+.king {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    color: red;
 }

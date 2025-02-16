@@ -1,11 +1,12 @@
 .servico {
     margin: 40px auto 0 auto;
-    width: 60%;
-    
+    width: 90%; 
+    max-width: 1200px; 
 }
 
+/* Título */
 h3 {
-    font-size: 30px;
+    font-size: 24px; 
     text-align: center;
     padding: 20px 0;
     color: aliceblue;
@@ -14,76 +15,92 @@ h3 {
     font-style: normal;
 }
 
-
+/* Lista de serviços */
 .servico ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr; 
+    gap: 20px;
     list-style: none;
     padding: 20px 0;
     margin: 0 auto;
 }
 
+/* Ajuste para tablets (2 colunas) */
+@media (min-width: 768px) {
+    .servico ul {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Ajuste para notebooks e desktops (3 colunas) */
+@media (min-width: 1024px) {
+    .servico ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Estilização de cada serviço */
 .servico li {
-    width: 320px;
-    max-width: 100%;
+    width: 100%; 
+    max-width: 300px; 
     margin: 20px auto;
-    padding: 0 10 10px 10;
+    padding: 10px;
     background-color: aliceblue;
     border-radius: 10px;
-}
-span {
-    display: flex;
-    max-width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-p {
-    font-size: 18px;
-    padding-right: 10px;
-}
-
-.servico img {
-    max-width: 100%;
     transition: 1s;
 }
 
-.servico img:hover {
+span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Texto */
+p {
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+/* Imagens */
+.servico img {
+    max-width: 100%;
+
+}
+
+.servico li:hover {
     transform: scale(1.1);
 }
 
+/* Preço */
 h5 {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     padding-left: 10px;
 }
 
+/* Botões */
 button {
     text-align: center;
-    padding: 10px ;
+    padding: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
     border: none;
     background-color: rgb(229, 239, 35);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    }
+}
 
-    button:hover {
-        background-color: rgb(234, 241, 88);
-    }
+button:hover {
+    background-color: rgb(234, 241, 88);
+}
 
-    @media (max-width: 600px) {
-        .servico {
-            width: 90%;
-        }
-                   
-        .servico ul {
-            grid-template-columns: 1fr;
-        }
+/* Reduz botão no mobile */
+@media (max-width: 768px) {
+    button {
+        font-size: 14px;
     }
-
+}
